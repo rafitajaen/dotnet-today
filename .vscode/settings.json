@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/node_modules/": true,
+        "**/bin/": true,
+        "**/obj/": true,
+        "**/pgdata/": true,
+        "**/redisdata/": true,
+    },
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#CBFB45",
+        "statusBar.foreground": "#000000",
+    },
+    "typescript.tsserver.watchOptions": "vscode",
+}
