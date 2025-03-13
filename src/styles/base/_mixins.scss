@@ -1,0 +1,25 @@
+@use "../base/breakpoints" as *;
+
+@mixin truncate {
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+@mixin max-width-by-screen {
+    width: 100%;
+    max-width: $xl-breakpoint;
+
+    @include onDesktop {
+        max-width: $lg-breakpoint;
+    }
+    @include onTablet {
+        max-width: $md-breakpoint;
+    }
+    @include onPortrait {
+        max-width: $md-breakpoint;
+    }
+    @include onMobile {
+        max-width: $sm-breakpoint;
+    }
+}

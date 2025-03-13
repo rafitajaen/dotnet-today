@@ -1,0 +1,47 @@
+@use "../base/sizes" as *;
+
+section.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.35rem;
+    padding: 0 2rem;
+
+    & > .latest {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        order: -9999;
+
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
+
+        color: var(--on-surface);
+        // background-color: var(--primary-container);
+
+        border: 1px solid var(--outline-variant);
+        border-radius: $md-radius;
+
+        padding: 0.45rem 0.75rem;
+    }
+    
+    & > h1 {
+        max-width: 42rem;
+        margin-top: 1rem;
+        margin-bottom: -0.5rem;
+        letter-spacing: -0.15rem;
+    }
+
+    & > p {
+        max-width: 41rem;
+        font-weight: 400;
+        font-size: 21px;
+        color: var(--on-surface-variant);
+        letter-spacing: -0.07rem;
+    }
+
+}

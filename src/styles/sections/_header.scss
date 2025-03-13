@@ -1,0 +1,47 @@
+@use "../base/sizes" as *;
+@use "../base/mixins" as *;
+@use "../base/breakpoints" as *;
+
+body > header {
+    
+    position: sticky;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    gap: $lg-gap;
+
+    padding: 1rem 2rem;
+
+    @include max-width-by-screen;
+
+    & > .header-logo {
+        display: flex;
+        align-items: center;
+        gap: $md-gap;
+
+        margin-right: auto;
+
+        font-size: 28px;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: -0.1rem;
+
+        color: var(--tertiary-container);
+    }
+
+    & > .cta {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-wrap: nowrap;
+
+        gap: $md-gap;
+
+        @include onPortrait {
+            display: none;
+        }
+    }
+    
+}

@@ -1,0 +1,18 @@
+svg.logo-icon {
+
+    display: block;
+
+    animation-duration: .3s;
+    --tw-duration: .3s;
+    transition-duration: .3s;
+
+    user-select: none;
+    will-change: transform;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    &:hover {
+        rotate: 90deg;
+    }
+}

@@ -1,0 +1,61 @@
+@use "../base/sizes" as *;
+
+svg.theme-icon {
+
+    padding-top: $xs-padding;
+
+    & > .sun {
+        display: none;
+        fill:currentColor;
+        stroke-width: 1;
+    }
+
+    & > .moon {
+        display: unset;
+        fill:currentColor;
+        stroke-width: 5;
+    }
+}
+
+body.dark svg.theme-icon {
+
+    padding-top: 0;
+
+    & > .sun {
+        display: unset;
+    }
+
+    & > .moon {
+        display: none;
+    }
+}
+
+body.light svg.theme-icon {
+
+    padding-top: $xs-padding;
+
+    & > .sun {
+        display: none;
+    }
+
+    & > .moon {
+        display: unset;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    body:not(.light) svg.theme-icon {
+
+        padding-top: 0;
+
+        & > .sun {
+            display: unset;
+        }
+    
+        & > .moon {
+            display: none;
+        }
+    }
+}

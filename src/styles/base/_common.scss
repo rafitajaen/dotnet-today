@@ -1,0 +1,39 @@
+@use "../base/mixins" as *;
+
+.hide {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.truncate {
+    @include truncate;
+}
+
+.order-first {
+    order: -9999;
+}
+
+
+/* TEXT */
+.text-center {
+    text-align: center;
+}
+
+
+/* FLEX */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center; 
+}

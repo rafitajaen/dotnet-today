@@ -1,0 +1,85 @@
+@use "../base/sizes" as *;
+@use "../base/mixins" as *;
+
+.button {
+
+    cursor: pointer;
+
+    color: var(--on-surface);
+    background-color: var(--surface);
+    border: 1px solid var(--outline-variant);
+    border-radius: $md-radius;
+
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: $md-font-size;
+
+    padding: $lg-padding $lg-padding;
+    box-sizing: border-box;
+
+    &:hover {
+        color: var(--on-tertiary-container);
+        background-color: var(--tertiary-container);
+        border-color: var(--tertiary-container);
+    }
+}
+
+.button-shadow {
+    color: var(--outline-variant);
+    background-color: var(--surface);
+    border-color: var(--outline-variant);
+    
+    &:hover {
+        color: var(--on-secondary-container);
+        background-color: var(--secondary-container);
+        border-color: var(--secondary-container);
+    }
+}
+
+.button-inverse {
+    color: var(--surface);
+    background-color: var(--on-surface);
+    border-color: var(--outline);
+    
+    &:hover {
+        color: var(--on-tertiary-container);
+        background-color: var(--tertiary-container);
+        border-color: var(--tertiary-container);
+    }
+}
+
+.button-primary {
+    color: var(--on-primary-container);
+    background-color: var(--primary-container);
+    border-color: var(--outline);
+    
+    &:hover {
+        color: var(--on-primary);
+        background-color: var(--primary);
+        border-color: var(--outline-variant);
+    }
+}
+
+.button-secondary {
+    color: var(--on-secondary-container);
+    background-color: var(--secondary-container);
+    border-color: var(--outline);
+
+    &:hover {
+        color: var(--on-secondary);
+        background-color: var(--secondary);
+        border-color: var(--outline-variant);
+    }
+}
+
+.button-tertiary {
+    color: var(--on-tertiary-container);
+    background-color: var(--tertiary-container);
+    border-color: var(--outline);
+
+    &:hover {
+        color: var(--on-tertiary);
+        background-color: var(--tertiary);
+        border-color: var(--outline-variant);
+    }
+}

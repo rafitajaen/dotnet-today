@@ -1,0 +1,208 @@
+// Interest Links
+// https://material-foundation.github.io/material-theme-builder/
+// https://m3.material.io/styles/color/roles
+
+// Test Theme
+@mixin test-material-theme() {
+    --primary: #ffece9;
+    --on-primary: #000000;
+    --primary-container: #ffaea3;
+    --on-primary-container: #220000;
+
+    --secondary: #bbffd7;
+    --on-secondary: #000000;
+    --secondary-container: #76d5a4;
+    --on-secondary-container: #000e06;
+
+    --tertiary: #ffeed1;
+    --on-tertiary: #000000;
+    --tertiary-container: #f3bf43;
+    --on-tertiary-container: #110a00;
+
+    --error: #ffece9;
+    --on-error: #000000;
+    --error-container: #ffaea4;
+    --on-error-container: #220001;
+
+    --surface-dim: #141313;
+    --surface: #141313;
+    --surface-bright: #524f4f;
+
+    --surface-container-lowest: #000000;
+    --surface-container-low: #211f1f;
+    --surface-container: #32302f;
+    --surface-container-high: #3d3b3a;
+    --surface-container-highest: #484646;
+
+    --on-surface: #ffffff;
+    --on-surface-variant: #e4b8b2;
+
+    --outline: #ffece9;
+    --outline-variant: #fff;
+    
+    --inverse-surface: #e6e1e0;
+    --inverse-on-surface: #000000;
+    --inverse-primary: #950005;
+
+    --scrim: #000000;
+    --shadow: #000000;
+
+    //p: #DC000D
+    //s: #3FA073
+    //t: #E4B135
+    //e: #FF5449
+    //n: #998E8A
+    //nv: #A08C89
+}
+
+@mixin light-material-theme() {
+    --primary: #000403;
+    --on-primary: #ffffff;
+    --primary-container: #00221d;
+    --on-primary-container: #b7d9d1;
+
+    --secondary: #00332c;
+    --on-secondary: #ffffff;
+    --secondary-container: #005349;
+    --on-secondary-container: #ffffff;
+
+    --tertiary: #3a2900;
+    --on-tertiary: #ffffff;
+    --tertiary-container: #5e4500;
+    --on-tertiary-container: #ffffff;
+
+    --error: #600004;
+    --on-error: #ffffff;
+    --error-container: #98000a;
+    --on-error-container: #ffffff;
+
+    --surface-dim: #b4bab8;
+    --surface: #f5fbf8;
+    --surface-bright: #f5fbf8;
+
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #ecf2ef;
+    --surface-container: #dee4e1;
+    --surface-container-high: #d0d6d3;
+    --surface-container-highest: #c2c8c5;
+
+    --on-surface: #000000;
+    --on-surface-variant: #000000;
+
+    --outline: #272e2c;
+    --outline-variant: #434b49;
+    
+    --inverse-surface: #2b3230;
+    --inverse-on-surface: #ffffff;
+    --inverse-primary: #abcec5;
+
+    --scrim: #000000;
+    --shadow: #000000;
+
+    //p: #00221D
+    //s: #006B5F
+    //t: #E4B135
+    //e: #FF5449
+    //n: #FF5449
+    //nv: #8F9190
+}
+
+@mixin dark-material-theme() {
+    --primary: #d4f7ef;
+    --on-primary: #000000;
+    --primary-container: #a7cac1;
+    --on-primary-container: #000e0b;
+
+    --secondary: #b0fff0;
+    --on-secondary: #000000;
+    --secondary-container: #7fd1c2;
+    --on-secondary-container: #000e0b;
+
+    --tertiary: #ffeed1;
+    --on-tertiary: #000000;
+    --tertiary-container: #f3bf43;
+    --on-tertiary-container: #110a00;
+
+    --error: #ffece9;
+    --on-error: #000000;
+    --error-container: #ffaea4;
+    --on-error-container: #220001;
+
+    --surface-dim: #0f1513;
+    --surface: #0f1513;
+    --surface-bright: #4b5150;
+
+    --surface-container-lowest: #000000;
+    --surface-container-low: #1b211f;
+    --surface-container: #2b3230;
+    --surface-container-high: #363d3b;
+    --surface-container-highest: #424846;
+
+    --on-surface: #ffffff;
+    --on-surface-variant: #b3b3b3;
+
+    --outline: #eaf2ee;
+    --outline-variant: #888a89;
+    
+    --inverse-surface: #dee4e1;
+    --inverse-on-surface: #000000;
+    --inverse-primary: #2e4e48;
+
+    --scrim: #000000;
+    --shadow: #000000;
+
+    //p: #00221D
+    //s: #006B5F
+    //t: #E4B135
+    //e: #FF5449
+    //n: #FF5449
+    //nv: #8F9190
+}
+
+
+@mixin light-theme() {
+    --primary-color: #3498db !important;
+    --secondary-color: #2ecc71 !important;
+    --accent-color: #d25a32 !important;
+    --background-color: #ffffff !important;
+    --text-color: #333333 !important;
+    --secondary-text-color: #4d4d4d !important;
+    --border-color: #a2a2a2 !important;
+    --muted-color: #747474 !important;
+}
+
+// Dark Theme
+@mixin dark-theme() {
+    --primary-color: oklab(0.871 -0.13533 0.0646971 / 0.9) !important;
+    --secondary-color: #2ecc71 !important;
+    --accent-color: #d25a32 !important;
+    --background-color: #151515 !important;
+    --text-color: #ffffff !important;
+    --secondary-text-color: #b4b4b4 !important;
+    --border-color: #2e2e2e !important;
+    --muted-color: #2e2e2e !important;
+}
+
+:root {
+    @include light-material-theme();
+}
+
+body.dark{
+    @include dark-material-theme();
+}
+
+body.light {
+    @include light-material-theme();
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body:not(.light) {
+        @include dark-material-theme();
+    }
+}
+
+.bg { background-color: var(--background-color); }
+.bg-primary { background-color: var(--primary-color); }
+.bg-secondary { background-color: var(--secondary-color); }
+.bg-accent { background-color: var(--accent-color); }

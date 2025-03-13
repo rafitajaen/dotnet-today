@@ -1,0 +1,48 @@
+$xs-gap: 0.2rem;
+$md-gap: 0.5rem;
+$lg-gap: 1rem;
+$xl-gap: 2rem;
+$xxl-gap: 4rem;
+
+$xs-radius: .1rem;
+$sm-radius: .2rem;
+$md-radius: .4rem;
+$lg-radius: .6rem;
+$xl-radius: .8rem;
+$xxl-radius: 1rem;
+
+$xs-padding: 0.25rem;
+$md-padding: 0.335rem;
+$lg-padding: 0.555rem;
+$xl-padding: 0.875rem;
+$xxl-padding: 1rem;
+
+$xs-font-size: 0.85rem;
+$md-font-size: 1rem;
+$lg-font-size: 1.15rem;
+$xl-font-size: 1.30rem;
+$xxl-font-size: 1.5rem;
+
+.full-w { width: 100%; }
+.full-h { height: 100%; }
+
+.gap-xs { gap: $xs-gap; }
+.gap-md { gap: $md-gap; }
+.gap-lg { gap: $lg-gap; }
+.gap-xl { gap: $xl-gap; }
+.gap-xlx { gap: $xxl-gap; }
+
+.p-2 { padding: 0.2rem }
+.p-4 { padding: 0.4rem }
+.p-6 { padding: 0.6rem }
+.p-8 { padding: 0.8rem }
+.p-10 { padding: 1rem }
+.p-12 { padding: 1.2rem }
+
+.pt-20 { padding-top: 2rem; }
+
+.mr-2 { margin-right: 1rem; }
+
+.mt-10svh { margin-top: 10svh; }
+.mt-20 { margin-top: 2rem; }
+.mt-40 { margin-top: 4rem; }

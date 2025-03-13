@@ -1,0 +1,31 @@
+@use "../base/sizes" as *;
+@use "../base/mixins" as *;
+@use "../base/breakpoints" as *;
+
+// Update variables to sync button border radius and padding
+$newsletter-button-padding: 4px;
+$newsletter-border-radius: $lg-radius;
+
+form.newsletter {
+
+    display: flex;
+    width: 100%;
+    max-width: 578px;
+
+    border: 1px solid var(--outline-variant);
+    border-radius: $newsletter-border-radius;
+
+    padding: $newsletter-button-padding;
+    margin: 1rem 0.5rem;
+    
+    & > * {
+        border-width: 0;
+        border-radius: $newsletter-border-radius;
+        line-height: 1.65rem;
+    }
+
+    & > button {
+        border-radius: calc($newsletter-border-radius - $newsletter-button-padding);
+        padding: 0.45rem 0.8rem;
+    }
+}

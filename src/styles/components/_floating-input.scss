@@ -1,0 +1,65 @@
+@use "../base/sizes" as *;
+
+.floating-input {
+
+    position: relative;
+
+    & > label {
+        position: absolute;
+        top: calc($md-padding + 24px);
+        left: 12px;
+        color: var(--on-surface);
+        background-color: var(--surface);
+        margin-bottom: 8px;
+        max-width: 90%;
+        overflow: hidden;
+        pointer-events: none;
+        padding: 1px 8px;
+        text-overflow: ellipsis;
+        transform: translateY(-50%);
+        transform-origin: 0;
+        transition: transform .15s ease-in-out, top .15s ease-in-out, padding .15s ease-in-out;
+        white-space: nowrap;
+        z-index: 1;
+    }
+
+    & > input {
+        
+        &:focus + label,
+        &[value="true"] + label {
+            font-size: 0.85rem;
+            font-weight: 300;
+            top: 5px;
+            left: 12px;
+            color: var(--tertiary-container);
+        }
+        // &[value="true"] + label
+        // {
+        //     font-size: 0.85rem;
+        //     font-weight: 300;
+        //     top: 5px;
+        //     left: 12px;
+        //     color: var(--tertiary-container);
+        // }
+        // // &:not(:empty) + label {
+        // //     font-size: 0.85rem;
+        // //     font-weight: 300;
+        // //     top: 5px;
+        // //     left: 12px;
+        // //     color: var(--tertiary-container);
+        // // }
+        // // &:invalid + label {
+        // //     font-size: 0.85rem;
+        // //     font-weight: 300;
+        // //     top: 5px;
+        // //     left: 12px;
+        // //     color: var(--error-container);
+        // // }
+        // &[value="true"] {
+        //     border-color: pink;
+        // }
+        // &:not([value="true"]) {
+        //     border-color: tomato;
+        // }
+    }
+}
